@@ -14,13 +14,13 @@ public class Main extends PApplet {
         starImage = loadImage("CapitolStar.png");
         mapImage = loadImage("map.png");
         size(600, 600);
-        imageMode(CENTER);
-        textAlign(CENTER);
         sketch = this;
     }
 
     public void setup() {
         background(0);
+        imageMode(CENTER);
+        textAlign(CENTER);
     }
 
     public void draw() {
