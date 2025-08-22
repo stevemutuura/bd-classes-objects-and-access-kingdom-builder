@@ -11,6 +11,7 @@ public class Main extends PApplet {
 
     private Castle castle1;
     private Castle castle2;
+    private Castle castle3;
 
     public void settings() {
         castleImage = loadImage("castle.png");
@@ -32,6 +33,10 @@ public class Main extends PApplet {
         castle2 = new Castle("Castle B", 500, "67890",
                 5500.0f, "Royal Gardens", false,
                 234.0522f, 318.2437f);
+
+        castle3 = new Castle("Castle C", 750, "54321",
+                3000.0f, "Ancient Ruins", false,
+                150.1234f, 200.5678f);
     }
 
     public void draw() {
@@ -39,6 +44,7 @@ public class Main extends PApplet {
 
         drawCastle(castle1);
         drawCastle(castle2);
+        drawCastle(castle3);
     }
 
     public void drawCastle(Castle castle) {
